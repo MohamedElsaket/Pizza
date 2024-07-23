@@ -13,26 +13,26 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       { 
-        path: '/', 
+        path: '/Pizza/', 
         element: <Home />
       },
       { 
-        path: '/menu',
+        path: '/Pizza/menu',
         element: <Menu />,
         loader: menuLoader,
         errorElement: <Error />
       },
       {
-        path: '/cart',
+        path: '/Pizza/cart',
         element: <Cart />
       },
       { 
-        path: '/order/new',
+        path: '/Pizza/order/new',
         element: <CreateOrder />,
         action: CreateOrderAction
       },
       {
-        path: '/order/:orderId',
+        path: '/Pizza/order/:orderId',
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />

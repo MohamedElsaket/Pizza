@@ -16,7 +16,7 @@ function CreateUser() {
 
     dispatch(updateName(username));
 
-    navigate('/menu');
+    navigate('/Pizza/menu');
   }
 
   return (

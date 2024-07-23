@@ -122,7 +122,7 @@ export async function action({ request }) {
   const newOrder = await createOrder(order)
 
 
-  return redirect(`/order/${newOrder.id}`);
+  return redirect(`/Pizza/order/${newOrder.id}`);
 }
 
 export default CreateOrder;

@@ -14,7 +14,7 @@ function Home() {
           Straight out of the oven, straight to you.
         </span>
       </h1>
-      {userName === '' ? <CreateUser /> : <Button to={'/menu'} type='primary'>Continue Ordering, {userName}</Button>}
+      {userName === '' ? <CreateUser /> : <Button to={'/Pizza/menu'} type='primary'>Continue Ordering, {userName}</Button>}
     </div>
   );
 }

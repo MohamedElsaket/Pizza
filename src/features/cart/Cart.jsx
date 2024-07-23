@@ -20,7 +20,7 @@ function Cart() {
 
   return (
     <div className='px-4 py-3'>
-      <Link to="/menu" className='text-sm text-blue-500 hover:text-blue-700 hover:underline'>&larr; Back to menu</Link>
+      <Link to="/Pizza/menu" className='text-sm text-blue-500 hover:text-blue-700 hover:underline'>&larr; Back to menu</Link>
 
       <h2 className='mt-7 text-xl font-semibold'>Your cart, <span className='uppercase'>{name}</span></h2>
 
@@ -29,7 +29,7 @@ function Cart() {
       </ul>
 
       <div className='mt-6 space-x-3'>
-        <Button to="/order/new" type='primary'>
+        <Button to="/Pizza/order/new" type='primary'>
          Order pizzas
         </Button>
         <Button type='secondary' onClick={handleDelete}>Clear cart</Button>
