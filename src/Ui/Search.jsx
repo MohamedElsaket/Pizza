@@ -8,7 +8,7 @@ const Search = () => {
     function handleSubmit(e) {
         e.preventDefault();
         if(!query) return;
-        navigate(`/order/${query}`);
+        navigate(`/Pizza/order/${query}`);
     }
 
     return ( <form onSubmit={handleSubmit}>
